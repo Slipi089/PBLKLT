@@ -1,0 +1,10 @@
+[Adblock Plus]
+! Title: Slipi's Amazon Echo Blocklist
+! Description: Blocks Amazon Echo-Service.
+! Homepage: https://github.com/Slipi089/PBLKLT
+! Syntax: AdBlock
+! Number of entries: 3
+!
+||api.amazonalexa.com^
+||avs-alexa-*-eu.amazon.com^
+||api.eu.amazonalexa.com^
