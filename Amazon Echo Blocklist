@@ -8,3 +8,5 @@
 ||api.amazonalexa.com^
 ||avs-alexa-*-eu.amazon.com^
 ||api.eu.amazonalexa.com^
+||*.us-east-*.prod.service.minerva.devices.a*z.com^
+||web.diagnostic.networking.aws.dev^
