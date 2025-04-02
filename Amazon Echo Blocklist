@@ -3,7 +3,7 @@
 ! Description: Blocks Amazon Echo-Service.
 ! Homepage: https://github.com/Slipi089/PBLKLT
 ! Syntax: AdBlock
-! Number of entries: 3
+! Number of entries: 5
 !
 ||api.amazonalexa.com^
 ||avs-alexa-*-eu.amazon.com^
