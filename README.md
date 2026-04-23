@@ -29,7 +29,7 @@ AdGuard übernimmt bestimmte Filter nicht in ihre offiziellen Listen, weil betro
 3. Diese URL einfügen:
 
 ```
-[https://raw.githubusercontent.com/Slipi089/PBLKLT/main/Slipi-AntiADBlock]
+https://raw.githubusercontent.com/Slipi089/PBLKLT/main/Slipi-AntiADBlock
 ```
 
 ## Was diese Filter tun
