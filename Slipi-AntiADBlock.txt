@@ -10,8 +10,6 @@
 ! Source: https://github.com/uBlockOrigin/uAssets (filters/filters.txt)
 ! Ported from uBlockOrigin/uAssets – Copyright (C) gorhill et al.
 ! This file is distributed under the GNU General Public License v3.
-
-
 ||tagger.opecloud.com^$xmlhttprequest,redirect=nooptext,domain=bild.de
 
 bild.de#%#//scriptlet("abort-on-property-read", "SmartAdServerASMI")
