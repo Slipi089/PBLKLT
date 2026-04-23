@@ -1,0 +1,93 @@
+||tagger.opecloud.com^$xmlhttprequest,redirect=nooptext,domain=bild.de
+
+bild.de#%#//scriptlet("abort-on-property-read", "SmartAdServerASMI")
+
+bild.de#%#//scriptlet("json-prune", "CLIENT_STORE_INITIAL_STATE.pageAggregation.advertisement.adBlockWallEnabled")
+bild.de#%#//scriptlet("json-prune", "CLIENT_STORE_INITIAL_STATE.pageAggregation.advertisement.adsOn")
+bild.de#%#//scriptlet("replace-node-text", "script", "\"adBlockWallEnabled\":true", "\"adBlockWallEnabled\":false")
+
+@@||bild.de^$generichide
+
+bild.de#@##fullBanner
+bild.de#@##powerplace
+bild.de#@##subchannelBanner1_1
+bild.de#@##subchannelBanner2_2
+bild.de#@#.cbErotikContentbar15
+bild.de#@#.contentbar
+bild.de#@#.eyecatcher
+bild.de#@#.footerbar
+bild.de#@#.jetzt_aufnehmen
+bild.de#@#.servicelinks
+bild.de#@#.tea-rectangle
+bild.de#@#.txe
+bild.de#@#.yield
+bild.de#@#.rectangle
+bild.de#@#.fullbanner
+bild.de#@#.ads
+
+bild.de##div:matches-css-before(content: /Anzeige/i)
+bild.de##.ad-wrapper
+bild.de##aside[data-type="ad"]
+
+bild.de##.main-nav .utilities > li:style(margin-left:-0.5px !important)
+
+sport.bild.de#@#.ad-wrapper
+
+spiele.bild.de#%#//scriptlet("prevent-setTimeout", "", "10000")
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,xmlhttprequest,domain=spiele.bild.de
+spiele.bild.de##div[id^="ad-landingpage-"]
+spiele.bild.de##div[id^="ad-gamepage-"]
+spiele.bild.de##.ad-vertical-box
+
+||servedby.adbility-media.com^$third-party
+
+@@||web.de^$generichide
+@@||gmx.net^$generichide
+@@||gmx.de^$generichide
+@@||gmx.at^$generichide
+@@||gmx.ch^$generichide
+
+web.de#@#.ad
+
+web.de##.ad:style(position:absolute !important; left:-10000px !important; display:block !important; pointer-events: none !important;)
+
+||web.de/*/nonfriendlyiframe.html$subdocument,~third-party
+
+web.de#%#//scriptlet("remove-node-text", "script", "\"Anzeige\"")
+
+web.de##div[data-service-slot-initialized]
+
+||uim.tifbs.net/js/*.js$script,redirect=noopjs,domain=gmx.net|gmx.de|gmx.at|gmx.ch|web.de
+
+web.de##.main [data-ac]:empty
+gmx.net##.main [data-ac]:empty
+gmx.de##.main [data-ac]:empty
+gmx.at##.main [data-ac]:empty
+gmx.ch##.main [data-ac]:empty
+
+web.de##.iba-acceptable:has-text(/Anzeige|Info/)
+
+gmx.net#%#//scriptlet("json-prune", "enabled", "force_disabled")
+gmx.de#%#//scriptlet("json-prune", "enabled", "force_disabled")
+gmx.at#%#//scriptlet("json-prune", "enabled", "force_disabled")
+gmx.ch#%#//scriptlet("json-prune", "enabled", "force_disabled")
+web.de#%#//scriptlet("json-prune", "enabled", "force_disabled")
+
+golem.de#%#//scriptlet("abort-current-inline-script", "showAds")
+
+golem.de#%#//scriptlet("prevent-setTimeout", "adBlockerDetected")
+golem.de#%#//scriptlet("prevent-setTimeout", "show")
+
+||video.golem.de/*/scripts/radiant/homad$xmlhttprequest,redirect=nooptext,domain=golem.de
+
+golem.de##[href^="https://ads.golem.de/"]
+
+golem.de##.sp-article:has(span:matches-css-before(content: /Anzeige/i))
+golem.de##.list-articles > li:has(.icon-addy:matches-css-before(content: "Anzeige"))
+golem.de##[data-article-id]:has([class]:matches-css-before(content: /ANZEIGE/))
+
+focus.de#%#//scriptlet("json-prune", "enabled", "force_disabled")
+kino.de#%#//scriptlet("json-prune", "enabled", "force_disabled")
+spieletipps.de#%#//scriptlet("json-prune", "enabled", "force_disabled")
+gamesaktuell.de#%#//scriptlet("json-prune", "enabled", "force_disabled")
+videogameszone.de#%#//scriptlet("json-prune", "enabled", "force_disabled")
