@@ -1,9 +1,28 @@
 [Adblock Plus]
 ! Title: Slipi's AntiADBlock
-! Description: Slipi-AntiAdBlock
+! Description: Ports uBlock Origin anti-adblock detection filters to AdGuard syntax.
+!              Covers bild.de, gmx.net, web.de, golem.de and related sites.
+! Version: 1.0.0
+! Last modified: 2026-04-23
+! License: GPL-3.0-only
+! License URL: https://github.com/Slipi089/PBLKLT/blob/main/LICENSE
 ! Homepage: https://github.com/Slipi089/PBLKLT
 ! Syntax: AdBlock
 !
+! Based on uBlock Origin filter lists:
+! Copyright (C) 2014-present Raymond Hill and contributors
+! Source: https://github.com/uBlockOrigin/uAssets
+! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE (GPLv3)
+!
+! This program is free software: you can redistribute it and/or modify
+! it under the terms of the GNU General Public License as published by
+! the Free Software Foundation, version 3 of the License.
+!
+! This program is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+! GNU General Public License for more details.
+
 ||tagger.opecloud.com^$xmlhttprequest,redirect=nooptext,domain=bild.de
 
 bild.de#%#//scriptlet("abort-on-property-read", "SmartAdServerASMI")
