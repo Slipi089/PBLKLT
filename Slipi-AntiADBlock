@@ -1,3 +1,9 @@
+[Adblock Plus]
+! Title: Slipi's AntiADBlock
+! Description: Slipi-AntiAdBlock
+! Homepage: https://github.com/Slipi089/PBLKLT
+! Syntax: AdBlock
+!
 ||tagger.opecloud.com^$xmlhttprequest,redirect=nooptext,domain=bild.de
 
 bild.de#%#//scriptlet("abort-on-property-read", "SmartAdServerASMI")
