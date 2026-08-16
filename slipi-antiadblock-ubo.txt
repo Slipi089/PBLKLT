@@ -81,3 +81,4 @@ rain-alarm.com##+js(set-constant, checkedAds, true)
 ! --- Affiliate / Werbeboxen (kein Anti-Adblock) ---
 pcgameshardware.de,pcgames.de##.innerArticleModule.spBtn
 pcgameshardware.de,pcgames.de##[class*="afUiBtn"]
+pcgameshardware.de,pcgames.de##.rtgBox
