@@ -5,7 +5,8 @@ für **AdGuard** und **uBlock Origin** bereitstellt. Verfügbar in zwei Syntax-V
 
 ## Umfang
 
-Deckt diverse deutschsprachige Nachrichten-, Mail- und Streaming-Seiten ab.
+Neutralisiert die Adblock-Erkennung diverser deutschsprachiger Nachrichten-, Mail-
+und Streaming-Seiten und blendet auf einzelnen Seiten Affiliate-/Werbeboxen aus.
 Die genaue Liste der Domains steht in der jeweiligen Filterdatei.
 
 ## Installation
@@ -46,4 +47,3 @@ Syntax angepasst.
 - Upstream: https://github.com/uBlockOrigin/uAssets
 - Upstream-Lizenz: GPL-3.0 (Copyright gorhill et al.)
 - Diese Liste steht ebenfalls unter **GPL-3.0**
-
