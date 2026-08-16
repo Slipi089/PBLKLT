@@ -1,6 +1,6 @@
 ! Title: Slipi's AntiADBlock (AdGuard)
 ! Description: Anti-adblock detection filters in AdGuard syntax.
-! Version: 1.3.0
+! Version: 1.4.0
 ! Last modified: 2026-08-16
 ! Homepage: https://github.com/Slipi089/PBLKLT
 ! License: GPL-3.0-only
@@ -84,3 +84,4 @@ rain-alarm.com#%#//scriptlet("set-constant", "checkedAds", "true")
 pcgameshardware.de,pcgames.de##.innerArticleModule.spBtn
 pcgameshardware.de,pcgames.de##[class*="afUiBtn"]
 pcgameshardware.de,pcgames.de##.rtgBox
+pcwelt.de##.promo_wrap
