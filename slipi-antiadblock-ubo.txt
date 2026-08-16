@@ -1,8 +1,5 @@
 ! Title: Slipi's AntiADBlock (uBO)
-! Description: Anti-adblock detection filters in uBlock Origin syntax. Covers
-!              bild.de, gmx.net, web.de, golem.de, focus.de, kino.de,
-!              spieletipps.de, gamesaktuell.de, videogameszone.de, wowtv.de,
-!              rain-alarm.com and related sites.
+! Description: Anti-adblock detection filters in uBlock Origin syntax.
 ! Version: 1.4.0
 ! Last modified: 2026-08-16
 ! Homepage: https://github.com/Slipi089/PBLKLT
