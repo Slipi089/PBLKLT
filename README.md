@@ -1,55 +1,49 @@
 # Slipi-AntiADBlock (DE)
 
-Inoffizielle Filterliste für **AdGuard Browser Extension**, die Anti-Adblock-Erkennungsfilter aus uBlock Origin für AdGuard-Syntax portiert.
+Inoffizielle Filterliste, die Anti-Adblock-Erkennungsfilter aus uBlock Origin
+für **AdGuard** und **uBlock Origin** bereitstellt. Verfügbar in zwei Syntax-Varianten.
 
-AdGuard übernimmt bestimmte Filter nicht in ihre offiziellen Listen, weil betroffene Websites eine kostenpflichtige Alternative anbieten und AdGuard das intern als „Paywall mit Option" wertet. Diese Liste füllt diese Lücke.
+## Umfang
 
-## Unterstützte Websites
-
-| Website | Beschreibung |
-|---|---|
-| bild.de | Anti-Adblock-Wall (adBlockWallEnabled), SmartAdServer-Erkennung |
-| sport.bild.de | Kosmetische Ausnahme |
-| spiele.bild.de | Verzögerte Adblock-Erkennung via setTimeout |
-| gmx.net / gmx.de / gmx.at / gmx.ch | FairPlay Anti-Adblock-Wall |
-| web.de | Anti-Adblock-Wall, Werbe-iFrame-Erkennung |
-| golem.de | showAds-Check, adBlockerDetected-Timeout |
-| focus.de | JSON-basierte Adblock-Erkennung |
-| kino.de | JSON-basierte Adblock-Erkennung |
-| spieletipps.de | JSON-basierte Adblock-Erkennung |
-| gamesaktuell.de | JSON-basierte Adblock-Erkennung |
-| videogameszone.de | JSON-basierte Adblock-Erkennung |
+Deckt diverse deutschsprachige Nachrichten-, Mail- und Streaming-Seiten ab.
+Die genaue Liste der Domains steht in der jeweiligen Filterdatei.
 
 ## Installation
 
-**AdGuard Browser Extension:**
+Im jeweiligen Blocker unter „Benutzerdefinierte Filter" die passende URL abonnieren –
+**nicht** beide Dateien gleichzeitig, sondern die zu deinem Blocker.
 
-1. AdGuard öffnen → Einstellungen → Filter
-2. Benutzerdefinierte Filter → Filter hinzufügen
-3. Diese URL einfügen:
+**AdGuard Browser Extension** (Einstellungen → Filter → Benutzerdefinierte Filter → Filter hinzufügen):
 
 ```
-https://raw.githubusercontent.com/Slipi089/PBLKLT/main/Slipi-AntiADBlock.txt
+https://raw.githubusercontent.com/Slipi089/PBLKLT/main/slipi-antiadblock-adguard.txt
 ```
 
-## Was diese Filter tun
+**uBlock Origin** (Dashboard → Filterlisten → Importieren):
 
-Diese Filter neutralisieren ausschließlich die **Erkennung** des Adblockers. Sie umgehen keine Paywalls und schalten keine kostenpflichtigen Inhalte frei. Die eigentliche Werbeblockierung übernehmen weiterhin die Standardlisten von AdGuard (EasyList, AdGuard Base, AdGuard German Filter).
+```
+https://raw.githubusercontent.com/Slipi089/PBLKLT/main/slipi-antiadblock-ubo.txt
+```
 
 ## Hinweise
 
-- Getestet mit AdGuard Browser Extension ≥ 4.x (Chrome/Firefox)
-- Nicht kompatibel mit AdGuard Home (DNS-Ebene) – DNS kann keine Scriptlets ausführen
-- Die Filter werden bei Änderungen der Upstream-Quelle manuell aktualisiert
+- Getestet mit AdGuard Browser Extension ≥ 4.x und uBlock Origin (Chrome/Firefox).
+- Nicht kompatibel mit AdGuard Home (DNS-Ebene) – DNS kann keine Scriptlets ausführen.
+- Unter Chromium/Manifest V3 kann die Scriptlet-Injektion später greifen als unter
+  Firefox; einzelne Erkennungen (z. B. rain-alarm.com) sind dort ggf. weniger zuverlässig.
+- Die Filter werden bei Änderungen der Upstream-Quelle manuell aktualisiert.
+
+## Verwandte Projekte
+
+- Regel-Quelle: https://github.com/uBlockOrigin/uAssets
+- AdGuard-Filter: https://github.com/AdguardTeam/AdguardFilters
 
 ## Quelle & Lizenz
 
-Die Filterregeln wurden aus **uBlockOrigin/uAssets** portiert und für AdGuard-Syntax angepasst.
+Die Filterregeln wurden aus **uBlockOrigin/uAssets** portiert und für die jeweilige
+Syntax angepasst.
 
 - Upstream: https://github.com/uBlockOrigin/uAssets
 - Upstream-Lizenz: GPL-3.0 (Copyright gorhill et al.)
 - Diese Liste steht ebenfalls unter **GPL-3.0**
 
-Relevante uAssets-Issues: #161 #6541 #6834 #7753 #8047 #8257 #8360 #8866 #9083 #9615 #15000 #15422 #22834
-
-Relevante AdGuard-Issues (Won't fix): #57891 #199190 #210163
