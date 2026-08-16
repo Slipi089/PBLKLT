@@ -80,4 +80,4 @@ wowtv.de##+js(set-constant, window.__CONFIGURATION__.features.enableAdBlockerDet
 rain-alarm.com##+js(set-constant, checkedAds, true)
 ! --- Affiliate / Werbeboxen (kein Anti-Adblock) ---
 pcgameshardware.de,pcgames.de##.innerArticleModule.spBtn
-pcgameshardware.de,pcgames.de##.afUiBtn4
+pcgameshardware.de,pcgames.de##[class*="afUiBtn"]
