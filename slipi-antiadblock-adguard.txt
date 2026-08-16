@@ -1,9 +1,6 @@
 ! Title: Slipi's AntiADBlock (AdGuard)
-! Description: Anti-adblock detection filters in AdGuard syntax. Covers
-!              bild.de, gmx.net, web.de, golem.de, focus.de, kino.de,
-!              spieletipps.de, gamesaktuell.de, videogameszone.de, wowtv.de,
-!              rain-alarm.com and related sites.
-! Version: 1.2.0
+! Description: Anti-adblock detection filters in AdGuard syntax.
+! Version: 1.3.0
 ! Last modified: 2026-08-16
 ! Homepage: https://github.com/Slipi089/PBLKLT
 ! License: GPL-3.0-only
@@ -83,3 +80,6 @@ videogameszone.de#%#//scriptlet("json-prune", "enabled", "force_disabled")
 wowtv.de#%#//scriptlet("set-constant", "window.__CONFIGURATION__.adInsertion.enabled", "false")
 wowtv.de#%#//scriptlet("set-constant", "window.__CONFIGURATION__.features.enableAdBlockerDetection", "false")
 rain-alarm.com#%#//scriptlet("set-constant", "checkedAds", "true")
+! --- Affiliate / Werbeboxen (kein Anti-Adblock) ---
+pcgameshardware.de,pcgames.de##.innerArticleModule.spBtn
+pcgameshardware.de,pcgames.de##.afUiBtn4
